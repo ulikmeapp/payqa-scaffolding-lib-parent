@@ -1,0 +1,27 @@
+auth0:
+  domain: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+  jwk-url: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+  issuer: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+
+backend:
+  establishment:
+    url: http://localhost:8087/ #payqa-ulikme-ws-establishment/
+  interaction:
+    url: http://localhost:8089/ #payqa-ulikme-ws-interaction/
+  meet:
+    url: http://localhost:8090/ #payqa-ulikme-ws-meet/
+  person:
+    url: http://localhost:8086/ #payqa-ulikme-ws-person/
+    #url: http://localhost:8081/payqa-ulikme-ws-person/
+
+server:
+  port : 8088
+
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://localhost:27017
+      database: ulikme
+

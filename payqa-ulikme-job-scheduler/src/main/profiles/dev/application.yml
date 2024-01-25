@@ -1,0 +1,34 @@
+auth0:
+  client-id: fzdm1Ufw9zyA6mIaP0hxq7QKp7ca2ffF #DPgmHmXKJUj5g9pCxjSz5v1FMLwtEqNB
+  client-secret: oXMx_UrW050w5soY0c4zwH4UetVg7p0Ih6GT43cOeE1aSMwpEU0s-JnbTjDCP5Dl #NeDBKnJHrRVfj67twiyTQzb9Wc1ThtO3w7JJn__VHYBW0gakI2VGQ2Kh-MY8sSxG
+  audience: http://localhost:3000
+  url: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+backend:
+  meet:
+    url: http://localhost:8090/ #payqa-ulikme-ws-meet/
+  establishment:
+    url: http://localhost:8087/ #payqa-ulikme-ws-establishment/
+  chat:
+    url: http://localhost:8088/ #payqa-ulikme-ws-chat/
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://localhost:27017
+      database: ulikme
+server:
+  port: 8083
+
+cloud:
+  aws:
+    region: us-east-1
+    static: false
+    credantionals:
+      access-key: AKIA6OTNOYS7FDYZSFPG
+      secret-key: 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
+    end-point:
+      uri: https://sqs.eu-north-1.amazonaws.com/993440744638/ulikme-person-update
+
+
+

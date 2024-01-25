@@ -1,0 +1,44 @@
+auth0:
+  domain: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+  jwk-url: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+  issuer: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+firebase:
+  service-account: firebase-dev-key.json
+twilio:
+  account-sid: ACad71967cf7ae4cfe51a16ecc1995e1c3
+  auth-token: 2b2c206689eefd057475b948da60b21a
+  enabled: true
+backend:
+  country:
+    url: http://localhost:8085/ #payqa-ulikme-ws-country/
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://localhost:27017
+      database: ulikme
+app:
+  config:
+    max-photos: 8
+server:
+  port : 8086
+
+cloud:
+  aws:
+    region: us-east-1
+    static: false
+    credantionals:
+      access-key: AKIA6OTNOYS7FDYZSFPG
+      secret-key: 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
+    end-point:
+      uri: https://sqs.eu-north-1.amazonaws.com/993440744638/ulikme-person-update
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
