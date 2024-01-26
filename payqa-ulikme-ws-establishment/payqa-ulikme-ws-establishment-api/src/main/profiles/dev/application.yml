@@ -9,7 +9,7 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      uri: mongodb://localhost:27017
+      uri: mongodb+srv://ulikmeapp:iFkec9PXXhShOv24@ulikme.b5djnl2.mongodb.net/?retryWrites=true&w=majority
       database: ulikme
 server:
   port : 8087
