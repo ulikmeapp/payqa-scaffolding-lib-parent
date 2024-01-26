@@ -19,7 +19,7 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      uri: mongodb+srv://ulikmeapp:iFkec9PXXhShOv24@ulikme.b5djnl2.mongodb.net/?retryWrites=true&w=majority
+      uri: mongodb+srv://ulikmeapp:iFkec9PXXhShOv24@ulikme.b5djnl2.mongodb.net/ulikme?retryWrites=true&w=majority
       database: ulikme
 app:
   config:
