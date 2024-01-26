@@ -1,0 +1,15 @@
+auth0:
+  domain: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+  jwk-url: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+  issuer: https://dev-n5d28qok.us.auth0.com #https://payqa-int.us.auth0.com/
+backend:
+  country:
+    url: http://localhost:8085/ #payqa-ulikme-ws-country/
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://localhost:27017
+      database: ulikme
+server:
+  port : 8087
