@@ -71,7 +71,11 @@
             <version>${person.version}</version>
         </dependency>
 
-       
+        <dependency>
+            <groupId>com.ulikme.chat</groupId>
+            <artifactId>payqa-ulikme-ws-chat-domain</artifactId>
+            <version>${chat.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

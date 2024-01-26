@@ -22,9 +22,8 @@ open class DefaultInteractionFacade(
     private val interactionService: InteractionService,
     private val personRetrofitClient: PersonRetrofitClient,
     private val chatRetrofitClient: ChatRetrofitClient,
-    private val propertiesConfiguration: PropertiesConfiguration,
-
-    ) : InteractionFacade {
+    private val propertiesConfiguration: PropertiesConfiguration
+) : InteractionFacade {
 
     override fun register(request: InteractionRequest): InteractionModel =
         InteractionRequestAssembler.toModel(request).let { interactionFromRequest ->

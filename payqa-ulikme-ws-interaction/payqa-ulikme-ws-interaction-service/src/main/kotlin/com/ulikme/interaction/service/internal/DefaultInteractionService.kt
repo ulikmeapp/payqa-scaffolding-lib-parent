@@ -120,17 +120,18 @@ open class DefaultInteractionService(
 
     override fun register(interaction: InteractionModel): InteractionModel {
         val updatedInteraction = interaction.copy(
-            match = isMatch(interaction),
-            classification = if (isMatch(interaction)) InteractionClassification.ULIKME.value else interaction.classification
+                match = isMatch(interaction),
+                classification = if (isMatch(interaction)) InteractionClassification.ULIKME.value else interaction.classification
         )
 
         // Save the updatedInteraction to the repository
         return InteractionModelMapper.inverseMap(
-            repository.save(
-                InteractionModelMapper.map(updatedInteraction)
-            )
+                repository.save(
+                        InteractionModelMapper.map(updatedInteraction)
+                )
         )
     }
+
 
     override fun joinToAGroup(id: String): InteractionModel =
         repository.findById(id).orElseThrow { throw NotFoundException("Cannot find interaction with id: $id") }

@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>payqa-ulikme-ws-person</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
         <groupId>com.ulikme</groupId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -17,7 +17,6 @@
         <dependency>
             <groupId>dev.payqa.scaffolding</groupId>
             <artifactId>payqa-scaffolding-lib-apicrud</artifactId>
-            <version>1.5.0-SNAPSHOT</version>
         </dependency>
 
         <!-- Spring Web Services -->
